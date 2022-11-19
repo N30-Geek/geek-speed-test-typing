@@ -5,7 +5,8 @@
     margin: 0;
 }
 
-html {
+html,
+body {
     position: relative;
     background-color: rgb(0, 0, 0);
     background-repeat: no-repeat;
@@ -15,14 +16,26 @@ html {
     right: 0;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
 .header {
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-bottom: 0.5px solid rgb(131, 131, 131);
-    height: 4em;
+    height: 3em;
     padding: 1em;
+    z-index: 100;
+    width: 100%;
 }
 
 .menu {
@@ -101,6 +114,96 @@ html {
     border: 1px dotted yellow;
     border-radius: 1em;
     animation: border-switchLD 0.5s ease;
+}
+
+/* du code css du contenues de la page */
+
+.contents {
+    margin-top: 4em;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Les codes du pieds de pages */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    width: 100%;
+    /* height: 100vh; */
+    padding: 1em;
+    bottom: 0;
+}
+
+.footer .mentionLegal {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .mentionLegal p {
+    text-align: center;
+    color: rgb(0, 136, 255);
+}
+
+.footer .foot-infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.footBox {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    margin: 1em;
+    padding: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footBox:hover {
+    border: 0.01px dotted rgba(240, 248, 255, 0.197);
+    border-radius: 1em;
+}
+
+.footBox h3 {
+    color: rgb(102, 184, 255);
+    padding: 0.3em;
+    padding-left: 0;
+    width: 90%;
+    text-align: left;
+    border-bottom: 1px solid white;
+    margin-bottom: 0.3em;
+}
+
+.footBox p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.footBox a {
+    text-decoration: none;
+    padding: 0.5em;
+    padding-left: 0;
+    /* border: 0.1px dotted aliceblue; */
+    font-weight: bold;
+}
+
+.footBox a:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: rgb(0, 136, 255);
+    background-color: rgba(105, 250, 255, 0.044);
 }
 
 /* all animation code */
