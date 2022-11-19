@@ -20,7 +20,7 @@ html {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgb(131, 131, 131);
+    border-bottom: 0.5px solid rgb(131, 131, 131);
     height: 4em;
     padding: 1em;
 }
@@ -50,7 +50,7 @@ html {
     border-radius: 1em;
     padding: 5px;
     height: 2em;
-    border: 0.1px dotted aliceblue;
+    border: 0.1px dotted rgb(0, 136, 255);
     font-family: monospace;
 }
 
@@ -60,6 +60,7 @@ html {
     border-radius: 0;
     font-weight: bold;
     animation: anima-border .5s;
+    color: rgb(0, 136, 255);
 }
 
 .logo {
@@ -72,12 +73,41 @@ html {
 }
 
 .switch-ModeDark-Light {
-    width: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 10%;
+    margin-right: 0;
+    border: 0.5 solid yellow;
+}
+
+.switch-ModeDark-Light span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: rgb(255, 183, 0);
+}
+
+.switch-ModeDark-Light img {
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    padding: 0.5em;
+}
+
+.switch-ModeDark-Light img:hover {
+    border: 1px dotted yellow;
+    border-radius: 1em;
+    animation: border-switchLD 0.5s ease;
 }
 
 /* all animation code */
 
 @keyframes anima-border {
+
+    /* Bordure menu animation */
     0% {
         border-radius: 1em;
     }
@@ -92,5 +122,15 @@ html {
 
     100% {
         border-radius: 0;
+    }
+}
+
+@keyframes border-switchLD {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 30px;
     }
 }
