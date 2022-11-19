@@ -62,9 +62,10 @@ body {
     width: 10%;
     border-radius: 1em;
     padding: 5px;
-    height: 2em;
+    height: 1em;
     border: 0.1px dotted rgb(0, 136, 255);
     font-family: monospace;
+    font-size: 10px;
 }
 
 .menu span a:hover {
@@ -81,7 +82,7 @@ body {
 }
 
 .logo img {
-    width: 200px;
+    width: 150px;
     height: auto;
 }
 
@@ -134,7 +135,7 @@ body {
     flex-direction: row;
     font-size: 10px;
     width: 100%;
-    /* height: 100vh; */
+    height: 4em;
     padding: 1em;
     bottom: 0;
 }
