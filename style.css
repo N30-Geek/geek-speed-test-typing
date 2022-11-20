@@ -137,7 +137,7 @@ body {
     flex-direction: row;
     font-size: 10px;
     width: 100%;
-    height: 4em;
+    height: 10em;
     padding: 1em;
     bottom: 0;
 }
@@ -207,6 +207,36 @@ body {
     text-decoration-style: dotted;
     text-decoration-color: rgb(0, 136, 255);
     background-color: rgba(105, 250, 255, 0.044);
+}
+
+.footBox div {
+    display: row;
+    background-color: rgba(140, 190, 190, 0.174);
+    border-radius: 0.5em;
+    justify-content: center;
+    padding: 3px;
+
+}
+
+.footBox #newEmail {
+    height: 1em;
+    width: 80%;
+    border: 1px dotted aliceblue;
+    background-color: transparent;
+    padding: 0.2em;
+    border-radius: 0.5em;
+
+}
+
+.footBox #submit {
+    background-color: transparent;
+
+    width: 12%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+    height: 100%;
+    border: none;
+    background-color: none;
 }
 
 /* all animation code */
